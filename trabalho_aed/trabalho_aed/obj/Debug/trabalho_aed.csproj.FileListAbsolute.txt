@@ -4,3 +4,6 @@ D:\Projetos\PUCMinas\trabalho_aed\trabalho_aed\bin\Debug\trabalho_aed.pdb
 D:\Projetos\PUCMinas\trabalho_aed\trabalho_aed\obj\Debug\trabalho_aed.csprojResolveAssemblyReference.cache
 D:\Projetos\PUCMinas\trabalho_aed\trabalho_aed\obj\Debug\trabalho_aed.exe
 D:\Projetos\PUCMinas\trabalho_aed\trabalho_aed\obj\Debug\trabalho_aed.pdb
+D:\Projetos\PUCMinas\trabalhos_aed\trabalho_aed\trabalho_aed\bin\Debug\trabalho_aed.exe.config
+D:\Projetos\PUCMinas\trabalhos_aed\trabalho_aed\trabalho_aed\obj\Debug\trabalho_aed.exe
+D:\Projetos\PUCMinas\trabalhos_aed\trabalho_aed\trabalho_aed\obj\Debug\trabalho_aed.pdb
