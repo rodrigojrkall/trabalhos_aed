@@ -19,8 +19,8 @@ namespace tp_aed.Classes
 
     public class lista
     {
-        protected elemento inicio;
-        protected int tamanho;
+        public elemento inicio;
+        public int tamanho;
 
         public bool vazio()
         {
@@ -48,10 +48,10 @@ namespace tp_aed.Classes
                 return;
             else
             {
-                if (anterior.proximo != null)
-                    anterior.proximo = aux.proximo;
+                if (anterior != null)
+                    anterior = aux.proximo;
                 else
-                    aux = null;
+                    inicio = inicio.proximo;
             }
         }
 
@@ -67,6 +67,6 @@ namespace tp_aed.Classes
             }
 
             return elementos;
-        }
+        }        
     }   
 }

@@ -12,6 +12,11 @@ namespace tp_aed.Classes
         public int codigo { get; set; }
         public string nome { get; set; }
         public string telefone { get; set; }
+
+        public contato()
+        {
+            this.codigo = 0;            
+        }
     }
 
     public class grupo
