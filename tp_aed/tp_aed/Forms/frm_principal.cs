@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace tp_aed
+namespace tp_aed.Forms
 {
-    public partial class Form1 : Form
+    public partial class frm_principal : Form
     {
-        public Form1()
+        public frm_principal()
         {
             InitializeComponent();
         }

@@ -6,74 +6,67 @@ using System.Threading.Tasks;
 
 namespace tp_aed.Classes
 {
+    public class elemento
+    {
+        public object objeto;
+        public elemento proximo;
+
+        public elemento(object objeto)
+        {
+            this.objeto = objeto;
+        }
+    }
+
     public class lista
     {
         protected elemento inicio;
-        protected elemento fim;
         protected int tamanho;
 
-        public bool Vazio()
+        public bool vazio()
         {
             return tamanho == 0;
         }
 
-        public void Inserir(elemento novo)
+        public void inserir(object objeto)
         {
+            elemento novo = new elemento(objeto);
             novo.proximo = inicio;
-            novo.anterior = null;
-            if (inicio != null)
-                inicio.anterior = novo;
-
-            inicio = novo;            
-
+            inicio = novo;
         }
 
-    }
-    public class contatos : lista
-    {
-        private Object inicio;
-        private Object fim;
-        private int tamanho;
-
-        public bool Vazio()
+        public void remover(object objeto)
         {
-            return tamanho == 0;
+            elemento aux = inicio;
+            elemento anterior = null;
+
+            while (aux != null && aux.objeto != objeto)
+            {
+                anterior = aux;
+                aux = aux.proximo;
+            }
+            if (aux == null)
+                return;
+            else
+            {
+                if (anterior.proximo != null)
+                    anterior.proximo = aux.proximo;
+                else
+                    aux = null;
+            }
         }
-    }
 
-    public class grupos
-    {
-        private Object inicio;
-        private Object fim;
-        private int tamanho;
-
-        public bool Vazio()
+        public List<object> listarElementos()
         {
-            return tamanho == 0;
+            List<object> elementos = new List<object>();
+            elemento aux = inicio;
+
+            while (aux != null)
+            {
+                elementos.Add(aux.objeto);
+                aux = aux.proximo;
+            }
+
+            return elementos;
         }
-    }
-
-    public class conversas
-    {
-        private Object inicio;
-        private Object fim;
-        private int tamanho;
-
-        public bool Vazio()
-        {
-            return tamanho == 0;
-        }
-    }
-
-    public class mensagens
-    {
-        private Object inicio;
-        private Object fim;
-        private int tamanho;
-
-        public bool Vazio()
-        {
-            return tamanho == 0;
-        }
-    }
+    }   
 }

@@ -1,6 +1,6 @@
-﻿namespace tp_aed
+﻿namespace tp_aed.Forms
 {
-    partial class Form1
+    partial class frm_principal
     {
         /// <summary>
         /// Required designer variable.
