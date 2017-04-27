@@ -46,7 +46,7 @@ namespace trabalho_aed.Classes
         public int Codigo { get; set; }
         public string Nome { get; set; }
         public string Hora_ultima_msg { get; set; }
-        //public List<Mensagem> mensagens;
+        public List<Mensagem> mensagens;
 
         public static Conversa Nova()
         {

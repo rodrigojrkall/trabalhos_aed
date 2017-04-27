@@ -1,5 +1,5 @@
 1 - Contatos
-	1 - Visualizar
+	1 - Visualizar todos
 		1 - Editar
 		2 - Excluir
 		3 - Enviar mensagem
@@ -7,19 +7,17 @@
 	2 - Novo contato
 	3 - Voltar
 2 - Grupos
-	1 - Visualizar
+	1 - Visualizar todos
 		1 - Editar
 		2 - Excluir
 		3 - Voltar
 	2 - Novo grupo
 	3 - Voltar
 3 - Conversas
-	1 - Visualizar
+	1 - Visualizar todas
 		1 - Ver mensagens
 		2 - Excluir 
 		3 - Voltar
 	2 - Nova Conversa
 	3 - Voltar
-4 - Sair	
-	
-	
+4 - Sair		

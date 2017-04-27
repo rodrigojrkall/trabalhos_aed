@@ -77,10 +77,10 @@ namespace trabalho_aed
                        
         static void Main(string[] args)
         {
-            /*
+            
             do
             {
-                MontarMenus("MENU", new string[] { "Contatos", "Grupos", "Conversas", "Mensagens" });
+                MontarMenus("MENU", "Contatos", "Grupos", "Conversas", "Mensagens" );
                 switch (opcao)
                 {
                     case 1:
@@ -97,16 +97,8 @@ namespace trabalho_aed
                         break;
                 }
             } while (opcao != 99);           
-            */
-            conversas.Add(new Conversa() { Codigo = 1, Nome = "Conversa com Rodrigo", Hora_ultima_msg = DateTime.Now.ToLongTimeString() });
-            conversas.Add(new Conversa() { Codigo = 1, Nome = "Conversa com Rodrigo", Hora_ultima_msg = DateTime.Now.ToLongTimeString() });
-            conversas.Add(new Conversa() { Codigo = 1, Nome = "Conversa com Rodrigo", Hora_ultima_msg = DateTime.Now.ToLongTimeString() });
-            conversas.Add(new Conversa() { Codigo = 1, Nome = "Conversa com Rodrigo", Hora_ultima_msg = DateTime.Now.ToLongTimeString() });
-            conversas.Add(new Conversa() { Codigo = 1, Nome = "Conversa com Rodrigo", Hora_ultima_msg = DateTime.Now.ToLongTimeString() });
-            conversas.Add(new Conversa() { Codigo = 1, Nome = "Conversa com Rodrigo", Hora_ultima_msg = DateTime.Now.ToLongTimeString() });
-            conversas.Add(new Conversa() { Codigo = 1, Nome = "Conversa com Rodrigo", Hora_ultima_msg = DateTime.Now.ToLongTimeString() });
-            conversas.Add(new Conversa() { Codigo = 1, Nome = "Conversa com Rodrigo", Hora_ultima_msg = DateTime.Now.ToLongTimeString() });
-            VisualizarItens(conversas);
+            
+                        
             Console.ReadKey();
         }
     }
