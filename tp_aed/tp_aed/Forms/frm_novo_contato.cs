@@ -11,11 +11,11 @@ using tp_aed.Classes;
 
 namespace tp_aed.Forms
 {
-    public partial class frm_contato : Form
+    public partial class frm_novo_contato : Form
     {
         public contato contato { get; set; }
 
-        public frm_contato()
+        public frm_novo_contato()
         {
             InitializeComponent();
             

@@ -1,6 +1,6 @@
 ﻿namespace tp_aed.Forms
 {
-    partial class frm_contato
+    partial class frm_novo_contato
     {
         /// <summary>
         /// Required designer variable.
@@ -88,7 +88,7 @@
             this.txt_telefone.Size = new System.Drawing.Size(100, 20);
             this.txt_telefone.TabIndex = 5;
             // 
-            // frm_contato
+            // frm_novo_contato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,9 +99,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_salvar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frm_contato";
+            this.Name = "frm_novo_contato";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Novo contato";
             this.ResumeLayout(false);

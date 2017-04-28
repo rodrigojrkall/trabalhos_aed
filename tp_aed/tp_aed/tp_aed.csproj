@@ -48,11 +48,29 @@
   <ItemGroup>
     <Compile Include="Classes\principais.cs" />
     <Compile Include="Classes\lista.cs" />
-    <Compile Include="Forms\frm_contato.cs">
+    <Compile Include="Forms\frm_contatos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_contato.Designer.cs">
-      <DependentUpon>frm_contato.cs</DependentUpon>
+    <Compile Include="Forms\frm_contatos.Designer.cs">
+      <DependentUpon>frm_contatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_mensagens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_mensagens.Designer.cs">
+      <DependentUpon>frm_mensagens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_novo_contato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_novo_contato.Designer.cs">
+      <DependentUpon>frm_novo_contato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_novo_grupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_novo_grupo.Designer.cs">
+      <DependentUpon>frm_novo_grupo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_principal.cs">
       <SubType>Form</SubType>
@@ -62,8 +80,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\frm_contato.resx">
-      <DependentUpon>frm_contato.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frm_contatos.resx">
+      <DependentUpon>frm_contatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_mensagens.resx">
+      <DependentUpon>frm_mensagens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_novo_contato.resx">
+      <DependentUpon>frm_novo_contato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_novo_grupo.resx">
+      <DependentUpon>frm_novo_grupo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_principal.resx">
       <DependentUpon>frm_principal.cs</DependentUpon>

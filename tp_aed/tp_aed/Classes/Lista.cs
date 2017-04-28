@@ -20,7 +20,7 @@ namespace tp_aed.Classes
     public class lista
     {
         public elemento inicio;
-        public int tamanho;
+        public int tamanho = 0;
 
         public bool vazio()
         {
@@ -32,6 +32,8 @@ namespace tp_aed.Classes
             elemento novo = new elemento(objeto);
             novo.proximo = inicio;
             inicio = novo;
+
+            tamanho++;
         }
 
         public void remover(object objeto)
@@ -49,9 +51,11 @@ namespace tp_aed.Classes
             else
             {
                 if (anterior != null)
-                    anterior = aux.proximo;
+                    anterior.proximo = aux.proximo;
                 else
                     inicio = inicio.proximo;
+
+                tamanho--;
             }
         }
 
@@ -67,6 +71,16 @@ namespace tp_aed.Classes
             }
 
             return elementos;
-        }        
+        }  
+        
+        public object pesquisar(object objeto)
+        {
+            elemento aux = inicio;
+
+            while( aux != null && aux.objeto != objeto)            
+                aux = aux.proximo;
+
+            return aux.objeto;
+        }      
     }   
 }
