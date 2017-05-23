@@ -24,11 +24,11 @@ namespace segundo_tp_aed
 
         public static int[] bubbleSort(int[] vetor)
         {
-            bool trocado;
+            bool trocando;
             int tamanho = vetor.Length;
             do
             {
-                trocado = false;
+                trocando = false;
                 tamanho--;
                 for (int i = 0; i < tamanho; i++)
                 {
@@ -37,24 +37,12 @@ namespace segundo_tp_aed
                         int aux = vetor[i + 1];
                         vetor[i + 1] = vetor[i];
                         vetor[i] = aux;
-                        trocado = true;
+                        trocando = true;
                     }
                 }
-            } while (trocado);
+            } while (trocando);
 
             return vetor;
-        }
-
-        public static void exibirVetor(int[] vetor)
-        {
-            Console.WriteLine("EXIBINDO VETOR:");
-
-            foreach (var numero in vetor)
-            {
-                Console.WriteLine(numero);
-            }
-
-            Console.WriteLine("---FIM---");
         }
     }
 }
